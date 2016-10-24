@@ -1,14 +1,16 @@
 <h1>メッセージ一覧</h1>
-<% @messages.each do |message| %>
+<%= form_for(@message) do |f| %>
 
   名前:
-<%= message.name %>
+  
+<%= f.text_field :name %>
+
 
   内容:
-<%= message.body %>
+  
+<%= f.text_field :body %>
 
-  <br>
+  
+<%= f.submit %>
+
 <% end %>
-
-
-<%= form_for(@message) do |f| %>
