@@ -35,4 +35,11 @@ h3{
 
 .form-group{
   font-size: 15px;
+  padding:10px;
+}
+.col-md-10{
+  padding-bottom:10px;
+}
+.btn{
+  float: right;
 }
