@@ -4,7 +4,7 @@
       <h3>メッセージ一覧</h3>
       <div class="panel-body">
         <% @messages.each do |message| %>
-          <p class="who"><%= message.name %></p>
+          <p class="who"><%= message.name %> <%= message.age %>歳</p>
           <p class="who2"><%= message.body %></p>
           <p>(<%= link_to "edit" , edit_message_path(message) %>
           <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>)</p>
